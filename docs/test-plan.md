@@ -50,7 +50,9 @@ Validates that registration is rejected when required fields are missing or cont
 | 1 | Send a registration request with an empty name field. | Validation throws an error indicating name is required. |
 | 2 | Send a registration request with a malformed email address (e.g. missing @ symbol). | Validation throws an error indicating the email format is invalid. |
 | 3 | Send a registration request with a password shorter than the minimum required length. | Validation throws an error indicating the password does not meet complexity requirements. |
-| 4 | Send a registration request with all fields missing. | Validation throws errors for all required fields simultaneously. |
+| 4 | Send a registration request with a password without an uppercase letter. | Validation throws an error indicating the password does not meet complexity requirements. |
+| 5 | Send a registration request with a password without a numeric character. | Validation throws an error indicating the password does not meet complexity requirements. |
+| 6 | Send a registration request with all fields missing. | Validation throws errors for all required fields simultaneously. |
 
 ---
 
